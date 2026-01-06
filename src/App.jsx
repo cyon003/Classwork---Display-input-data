@@ -5,6 +5,8 @@ export default function App() {
   return (
     <Routes>
     <Route path="/" element={<SubmitData />} />
+      <Route path="/submitdata" element={<SubmitData />} />
+      <Route path="*" element={<SubmitData to="/submitdata" replace />} />
   </Routes>
     // <div>
     //   <nav style={{ padding: 12 }}>
